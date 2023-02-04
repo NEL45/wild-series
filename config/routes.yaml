@@ -3,3 +3,12 @@ controllers:
         path: ../src/Controller/
         namespace: App\Controller
     type: attribute
+
+# the "program_index" route name is not important yet
+program_index:
+    path: /program
+    controller: App\Controller\ProgramController::index
+
+app_index:
+    path: /
+    controller: App\Controller\DefaultController::index
